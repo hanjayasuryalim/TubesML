@@ -13102,7 +13102,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;mental-health.csv&#39;</span><span class="p">)</span>
@@ -13115,15 +13115,18 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">no</span><span class="o">=</span><span class="mi">1</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">no</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;==========================================&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">item</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;==========================================&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">no</span><span class="o">+=</span><span class="mi">1</span>
 </pre></div>
 
     </div>
@@ -13140,7 +13143,8 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>==========================================
+<pre>1
+==========================================
 Are you self-employed?
 [0 1]
 ==========================================
@@ -13148,6 +13152,7 @@ Are you self-employed?
 
 
 
+2
 ==========================================
 How many employees does your company or organization have?
 [&#39;26-100&#39; &#39;6-25&#39; nan &#39;More than 1000&#39; &#39;100-500&#39; &#39;500-1000&#39; &#39;1-5&#39;]
@@ -13156,6 +13161,7 @@ How many employees does your company or organization have?
 
 
 
+3
 ==========================================
 Is your employer primarily a tech company/organization?
 [ 1. nan  0.]
@@ -13164,6 +13170,7 @@ Is your employer primarily a tech company/organization?
 
 
 
+4
 ==========================================
 Is your primary role within your company related to tech/IT?
 [nan  1.  0.]
@@ -13172,6 +13179,7 @@ Is your primary role within your company related to tech/IT?
 
 
 
+5
 ==========================================
 Does your employer provide mental health benefits as part of healthcare coverage?
 [&#39;Not eligible for coverage / N/A&#39; &#39;No&#39; nan &#39;Yes&#39; &#34;I don&#39;t know&#34;]
@@ -13180,6 +13188,7 @@ Does your employer provide mental health benefits as part of healthcare coverage
 
 
 
+6
 ==========================================
 Do you know the options for mental health care available under your employer-provided coverage?
 [nan &#39;Yes&#39; &#39;I am not sure&#39; &#39;No&#39;]
@@ -13188,6 +13197,7 @@ Do you know the options for mental health care available under your employer-pro
 
 
 
+7
 ==========================================
 Has your employer ever formally discussed mental health (for example, as part of a wellness campaign or other official communication)?
 [&#39;No&#39; &#39;Yes&#39; nan &#34;I don&#39;t know&#34;]
@@ -13196,6 +13206,7 @@ Has your employer ever formally discussed mental health (for example, as part of
 
 
 
+8
 ==========================================
 Does your employer offer resources to learn more about mental health concerns and options for seeking help?
 [&#39;No&#39; &#39;Yes&#39; nan &#34;I don&#39;t know&#34;]
@@ -13204,6 +13215,7 @@ Does your employer offer resources to learn more about mental health concerns an
 
 
 
+9
 ==========================================
 Is your anonymity protected if you choose to take advantage of mental health or substance abuse treatment resources provided by your employer?
 [&#34;I don&#39;t know&#34; &#39;Yes&#39; nan &#39;No&#39;]
@@ -13212,6 +13224,7 @@ Is your anonymity protected if you choose to take advantage of mental health or 
 
 
 
+10
 ==========================================
 If a mental health issue prompted you to request a medical leave from work, asking for that leave would be:
 [&#39;Very easy&#39; &#39;Somewhat easy&#39; &#39;Neither easy nor difficult&#39; nan
@@ -13221,6 +13234,7 @@ If a mental health issue prompted you to request a medical leave from work, aski
 
 
 
+11
 ==========================================
 Do you think that discussing a mental health disorder with your employer would have negative consequences?
 [&#39;No&#39; &#39;Maybe&#39; nan &#39;Yes&#39;]
@@ -13229,6 +13243,7 @@ Do you think that discussing a mental health disorder with your employer would h
 
 
 
+12
 ==========================================
 Do you think that discussing a physical health issue with your employer would have negative consequences?
 [&#39;No&#39; nan &#39;Maybe&#39; &#39;Yes&#39;]
@@ -13237,6 +13252,7 @@ Do you think that discussing a physical health issue with your employer would ha
 
 
 
+13
 ==========================================
 Would you feel comfortable discussing a mental health disorder with your coworkers?
 [&#39;Maybe&#39; nan &#39;Yes&#39; &#39;No&#39;]
@@ -13245,6 +13261,7 @@ Would you feel comfortable discussing a mental health disorder with your coworke
 
 
 
+14
 ==========================================
 Would you feel comfortable discussing a mental health disorder with your direct supervisor(s)?
 [&#39;Yes&#39; &#39;Maybe&#39; nan &#39;No&#39;]
@@ -13253,6 +13270,7 @@ Would you feel comfortable discussing a mental health disorder with your direct 
 
 
 
+15
 ==========================================
 Do you feel that your employer takes mental health as seriously as physical health?
 [&#34;I don&#39;t know&#34; &#39;Yes&#39; nan &#39;No&#39;]
@@ -13261,6 +13279,7 @@ Do you feel that your employer takes mental health as seriously as physical heal
 
 
 
+16
 ==========================================
 Have you heard of or observed negative consequences for co-workers who have been open about mental health issues in your workplace?
 [&#39;No&#39; nan &#39;Yes&#39;]
@@ -13269,6 +13288,7 @@ Have you heard of or observed negative consequences for co-workers who have been
 
 
 
+17
 ==========================================
 Do you have medical coverage (private insurance or state-provided) which includes treatment of  mental health issues?
 [nan  1.  0.]
@@ -13277,6 +13297,7 @@ Do you have medical coverage (private insurance or state-provided) which include
 
 
 
+18
 ==========================================
 Do you know local or online resources to seek help for a mental health disorder?
 [nan &#39;Yes, I know several&#39; &#39;I know some&#39; &#34;No, I don&#39;t know any&#34;]
@@ -13285,6 +13306,7 @@ Do you know local or online resources to seek help for a mental health disorder?
 
 
 
+19
 ==========================================
 If you have been diagnosed or treated for a mental health disorder, do you ever reveal this to clients or business contacts?
 [nan &#39;Sometimes, if it comes up&#39; &#34;No, because it doesn&#39;t matter&#34;
@@ -13295,6 +13317,7 @@ If you have been diagnosed or treated for a mental health disorder, do you ever 
 
 
 
+20
 ==========================================
 If you have revealed a mental health issue to a client or business contact, do you believe this has impacted you negatively?
 [nan &#34;I&#39;m not sure&#34; &#39;Yes&#39; &#39;No&#39;]
@@ -13303,6 +13326,7 @@ If you have revealed a mental health issue to a client or business contact, do y
 
 
 
+21
 ==========================================
 If you have been diagnosed or treated for a mental health disorder, do you ever reveal this to coworkers or employees?
 [nan &#39;Sometimes, if it comes up&#39;
@@ -13313,6 +13337,7 @@ If you have been diagnosed or treated for a mental health disorder, do you ever 
 
 
 
+22
 ==========================================
 If you have revealed a mental health issue to a coworker or employee, do you believe this has impacted you negatively?
 [nan &#34;I&#39;m not sure&#34; &#39;No&#39; &#39;Yes&#39; &#39;Not applicable to me&#39;]
@@ -13321,6 +13346,7 @@ If you have revealed a mental health issue to a coworker or employee, do you bel
 
 
 
+23
 ==========================================
 Do you believe your productivity is ever affected by a mental health issue?
 [nan &#39;Yes&#39; &#39;Not applicable to me&#39; &#39;No&#39; &#39;Unsure&#39;]
@@ -13329,6 +13355,7 @@ Do you believe your productivity is ever affected by a mental health issue?
 
 
 
+24
 ==========================================
 If yes, what percentage of your work time (time performing primary or secondary job functions) is affected by a mental health issue?
 [nan &#39;1-25%&#39; &#39;76-100%&#39; &#39;26-50%&#39; &#39;51-75%&#39;]
@@ -13337,6 +13364,7 @@ If yes, what percentage of your work time (time performing primary or secondary 
 
 
 
+25
 ==========================================
 Do you have previous employers?
 [1 0]
@@ -13345,6 +13373,7 @@ Do you have previous employers?
 
 
 
+26
 ==========================================
 Have your previous employers provided mental health benefits?
 [&#39;No, none did&#39; &#39;Yes, they all did&#39; &#39;Some did&#39; &#34;I don&#39;t know&#34; nan]
@@ -13353,6 +13382,7 @@ Have your previous employers provided mental health benefits?
 
 
 
+27
 ==========================================
 Were you aware of the options for mental health care provided by your previous employers?
 [&#39;N/A (not currently aware)&#39; &#39;I was aware of some&#39;
@@ -13362,6 +13392,7 @@ Were you aware of the options for mental health care provided by your previous e
 
 
 
+28
 ==========================================
 Did your previous employers ever formally discuss mental health (as part of a wellness campaign or other official communication)?
 [&#34;I don&#39;t know&#34; &#39;None did&#39; &#39;Some did&#39; nan &#39;Yes, they all did&#39;]
@@ -13370,6 +13401,7 @@ Did your previous employers ever formally discuss mental health (as part of a we
 
 
 
+29
 ==========================================
 Did your previous employers provide resources to learn more about mental health issues and how to seek help?
 [&#39;None did&#39; &#39;Some did&#39; nan &#39;Yes, they all did&#39;]
@@ -13378,6 +13410,7 @@ Did your previous employers provide resources to learn more about mental health 
 
 
 
+30
 ==========================================
 Was your anonymity protected if you chose to take advantage of mental health or substance abuse treatment resources with previous employers?
 [&#34;I don&#39;t know&#34; &#39;Yes, always&#39; &#39;Sometimes&#39; &#39;No&#39; nan]
@@ -13386,6 +13419,7 @@ Was your anonymity protected if you chose to take advantage of mental health or 
 
 
 
+31
 ==========================================
 Do you think that discussing a mental health disorder with previous employers would have negative consequences?
 [&#39;Some of them&#39; &#39;None of them&#39; &#34;I don&#39;t know&#34; &#39;Yes, all of them&#39; nan]
@@ -13394,6 +13428,7 @@ Do you think that discussing a mental health disorder with previous employers wo
 
 
 
+32
 ==========================================
 Do you think that discussing a physical health issue with previous employers would have negative consequences?
 [&#39;None of them&#39; &#39;Some of them&#39; &#39;Yes, all of them&#39; nan]
@@ -13402,6 +13437,7 @@ Do you think that discussing a physical health issue with previous employers wou
 
 
 
+33
 ==========================================
 Would you have been willing to discuss a mental health issue with your previous co-workers?
 [&#39;Some of my previous employers&#39; &#39;No, at none of my previous employers&#39;
@@ -13411,6 +13447,7 @@ Would you have been willing to discuss a mental health issue with your previous 
 
 
 
+34
 ==========================================
 Would you have been willing to discuss a mental health issue with your direct supervisor(s)?
 [&#39;Some of my previous employers&#39; &#34;I don&#39;t know&#34;
@@ -13421,6 +13458,7 @@ Would you have been willing to discuss a mental health issue with your direct su
 
 
 
+35
 ==========================================
 Did you feel that your previous employers took mental health as seriously as physical health?
 [&#34;I don&#39;t know&#34; &#39;Some did&#39; &#39;None did&#39; &#39;Yes, they all did&#39; nan]
@@ -13429,6 +13467,7 @@ Did you feel that your previous employers took mental health as seriously as phy
 
 
 
+36
 ==========================================
 Did you hear of or observe negative consequences for co-workers with mental health issues in your previous workplaces?
 [&#39;None of them&#39; &#39;Some of them&#39; nan &#39;Yes, all of them&#39;]
@@ -13437,6 +13476,7 @@ Did you hear of or observe negative consequences for co-workers with mental heal
 
 
 
+37
 ==========================================
 Would you be willing to bring up a physical health issue with a potential employer in an interview?
 [&#39;Maybe&#39; &#39;Yes&#39; &#39;No&#39;]
@@ -13445,6 +13485,7 @@ Would you be willing to bring up a physical health issue with a potential employ
 
 
 
+38
 ==========================================
 Why or why not?
 [nan
@@ -13458,6 +13499,7 @@ Why or why not?
 
 
 
+39
 ==========================================
 Would you bring up a mental health issue with a potential employer in an interview?
 [&#39;Maybe&#39; &#39;No&#39; &#39;Yes&#39;]
@@ -13466,6 +13508,7 @@ Would you bring up a mental health issue with a potential employer in an intervi
 
 
 
+40
 ==========================================
 Why or why not?.1
 [nan
@@ -13478,6 +13521,7 @@ Why or why not?.1
 
 
 
+41
 ==========================================
 Do you feel that being identified as a person with a mental health issue would hurt your career?
 [&#39;Maybe&#39; &#34;No, I don&#39;t think it would&#34; &#39;Yes, I think it would&#39;
@@ -13487,6 +13531,7 @@ Do you feel that being identified as a person with a mental health issue would h
 
 
 
+42
 ==========================================
 Do you think that team members/co-workers would view you more negatively if they knew you suffered from a mental health issue?
 [&#34;No, I don&#39;t think they would&#34; &#39;Maybe&#39; &#39;Yes, they do&#39;
@@ -13496,6 +13541,7 @@ Do you think that team members/co-workers would view you more negatively if they
 
 
 
+43
 ==========================================
 How willing would you be to share with friends and family that you have a mental illness?
 [&#39;Somewhat open&#39; &#39;Neutral&#39;
@@ -13506,6 +13552,7 @@ How willing would you be to share with friends and family that you have a mental
 
 
 
+44
 ==========================================
 Have you observed or experienced an unsupportive or badly handled response to a mental health issue in your current or previous workplace?
 [&#39;No&#39; &#39;Maybe/Not sure&#39; &#39;Yes, I experienced&#39; &#39;Yes, I observed&#39; nan]
@@ -13514,6 +13561,7 @@ Have you observed or experienced an unsupportive or badly handled response to a 
 
 
 
+45
 ==========================================
 Have your observations of how another individual who discussed a mental health disorder made you less likely to reveal a mental health issue yourself in your current workplace?
 [nan &#39;Yes&#39; &#39;No&#39; &#39;Maybe&#39;]
@@ -13522,6 +13570,7 @@ Have your observations of how another individual who discussed a mental health d
 
 
 
+46
 ==========================================
 Do you have a family history of mental illness?
 [&#39;No&#39; &#39;Yes&#39; &#34;I don&#39;t know&#34;]
@@ -13530,6 +13579,7 @@ Do you have a family history of mental illness?
 
 
 
+47
 ==========================================
 Have you had a mental health disorder in the past?
 [&#39;Yes&#39; &#39;Maybe&#39; &#39;No&#39;]
@@ -13538,6 +13588,7 @@ Have you had a mental health disorder in the past?
 
 
 
+48
 ==========================================
 Do you currently have a mental health disorder?
 [&#39;No&#39; &#39;Yes&#39; &#39;Maybe&#39;]
@@ -13546,6 +13597,7 @@ Do you currently have a mental health disorder?
 
 
 
+49
 ==========================================
 If yes, what condition(s) have you been diagnosed with?
 [nan
@@ -13678,6 +13730,7 @@ If yes, what condition(s) have you been diagnosed with?
 
 
 
+50
 ==========================================
 If maybe, what condition(s) do you believe you have?
 [nan &#39;Substance Use Disorder|Addictive Disorder&#39;
@@ -13782,6 +13835,7 @@ If maybe, what condition(s) do you believe you have?
 
 
 
+51
 ==========================================
 Have you been diagnosed with a mental health condition by a medical professional?
 [&#39;Yes&#39; &#39;No&#39;]
@@ -13790,6 +13844,7 @@ Have you been diagnosed with a mental health condition by a medical professional
 
 
 
+52
 ==========================================
 If so, what condition(s) were you diagnosed with?
 [&#39;Anxiety Disorder (Generalized, Social, Phobia, etc)&#39;
@@ -13910,6 +13965,7 @@ If so, what condition(s) were you diagnosed with?
 
 
 
+53
 ==========================================
 Have you ever sought treatment for a mental health issue from a mental health professional?
 [0 1]
@@ -13918,6 +13974,7 @@ Have you ever sought treatment for a mental health issue from a mental health pr
 
 
 
+54
 ==========================================
 If you have a mental health issue, do you feel that it interferes with your work when being treated effectively?
 [&#39;Not applicable to me&#39; &#39;Rarely&#39; &#39;Sometimes&#39; &#39;Never&#39; &#39;Often&#39;]
@@ -13926,6 +13983,7 @@ If you have a mental health issue, do you feel that it interferes with your work
 
 
 
+55
 ==========================================
 If you have a mental health issue, do you feel that it interferes with your work when NOT being treated effectively?
 [&#39;Not applicable to me&#39; &#39;Sometimes&#39; &#39;Often&#39; &#39;Rarely&#39; &#39;Never&#39;]
@@ -13934,6 +13992,7 @@ If you have a mental health issue, do you feel that it interferes with your work
 
 
 
+56
 ==========================================
 What is your age?
 [ 39  29  38  43  42  30  37  44  28  34  35  52  32  25  31  26  33  27
@@ -13944,6 +14003,7 @@ What is your age?
 
 
 
+57
 ==========================================
 What is your gender?
 [&#39;Male&#39; &#39;male&#39; &#39;Male &#39; &#39;Female&#39; &#39;M&#39; &#39;female&#39; &#39;m&#39; &#39;I identify as female.&#39;
@@ -13968,6 +14028,7 @@ What is your gender?
 
 
 
+58
 ==========================================
 What country do you live in?
 [&#39;United Kingdom&#39; &#39;United States of America&#39; &#39;Canada&#39; &#39;Germany&#39;
@@ -13984,6 +14045,7 @@ What country do you live in?
 
 
 
+59
 ==========================================
 What US state or territory do you live in?
 [nan &#39;Illinois&#39; &#39;Tennessee&#39; &#39;Virginia&#39; &#39;California&#39; &#39;Kentucky&#39; &#39;Oregon&#39;
@@ -13999,6 +14061,7 @@ What US state or territory do you live in?
 
 
 
+60
 ==========================================
 What country do you work in?
 [&#39;United Kingdom&#39; &#39;United States of America&#39; &#39;Canada&#39; &#39;Germany&#39;
@@ -14015,6 +14078,7 @@ What country do you work in?
 
 
 
+61
 ==========================================
 What US state or territory do you work in?
 [nan &#39;Illinois&#39; &#39;Tennessee&#39; &#39;Virginia&#39; &#39;California&#39; &#39;Kentucky&#39; &#39;Oregon&#39;
@@ -14031,6 +14095,7 @@ What US state or territory do you work in?
 
 
 
+62
 ==========================================
 Which of the following best describes your work position?
 [&#39;Back-end Developer&#39; &#39;Back-end Developer|Front-end Developer&#39;
@@ -14279,6 +14344,7 @@ Which of the following best describes your work position?
 
 
 
+63
 ==========================================
 Do you work remotely?
 [&#39;Sometimes&#39; &#39;Never&#39; &#39;Always&#39;]
@@ -14287,6 +14353,144 @@ Do you work remotely?
 
 
 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">colus</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Self-employed&#39;</span><span class="p">,</span> <span class="s1">&#39;Number of employees&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Tech Organization&#39;</span><span class="p">,</span> <span class="s1">&#39;Tech Role&#39;</span><span class="p">,</span> <span class="s1">&#39;Provided healthcare benefits&#39;</span><span class="p">,</span> <span class="s1">&#39;Know healthcare benefits provided&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Has talked about mental health with employer&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Employer provides resources for mental health treatment&#39;</span><span class="p">,</span> <span class="s1">&#39;Anonymity protected for treatment usage&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Will take a sick leave for mental health&#39;</span><span class="p">,</span> <span class="s1">&#39;Discussing mental health disorders would have negative consequences&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Discussing physical health disorders would have negative consequences&#39;</span><span class="p">,</span>  
+         <span class="s1">&#39;Would feel comfortable discussing mental health with coworker(s)&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Would feel comfortable discussing mental health with direct supervisor(s)&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Employer takes mental health as seriously as physical health&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Have heard negative consequences for employees open about mental health issues&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Have medical coverage for mental health issues&#39;</span><span class="p">,</span> <span class="s1">&#39;Know resources for mental health treatment&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Will reveal mental health issues to clients or business contacts&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Revealing mental health issues to clients or business contacts will have negative impacts on career &#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Will reveal mental health issues to coworkers or employees&#39;</span><span class="p">,</span>  
+         <span class="s1">&#39;Revealing mental health issues to clients or business contacts will have negative impacts on career &#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Productivity ever affected by mental health issue&#39;</span><span class="p">,</span> <span class="s1">&#39;Percentage, if true&#39;</span><span class="p">,</span> <span class="s1">&#39;Have previous employers&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Previous employers have provided mental health benefits&#39;</span><span class="p">,</span> <span class="s1">&#39;Aware of mental health benefits provided by previous employers&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Discussing mental health issues with previous employers will have negative consequences&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Willing to share mental health issues with previous coworkers&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Willing to share mental health issues with previous direct supervisor(s)&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Previous employers took mental health as seriously as physical health&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Heard bad consequences for previous coworkers with mental health issues&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;Willing to bring up a physical health issue with a potential employer&#39;</span><span class="p">,</span> <span class="s1">&#39;Why or why not?&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Would bring up a mental health issue with a potential employer in an interview&quot;,&quot;Why or why not?&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Being identified as a person with a mental health issue would hurt your career&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Team members/co-workers would view you more negatively if they knew you suffered from a mental health issue&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Willingness to share with friends and family that you have a mental illness&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Have observed or experienced an unsupportive or badly handled response to a mental health issue in your current or previous workplace&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Have observations of how another individual who discussed a mental health disorder that made you less likely to reveal a mental health issue yourself in your current workplace&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Have a family history of mental illness?&quot;,&quot;Had a mental health disorder in the past?&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Currently have a mental health disorder&#39;</span><span class="p">,</span><span class="s1">&#39;If yes, what condition(s)&#39;</span><span class="p">,</span><span class="s1">&#39;If maybe, what condition(s)&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Have been diagnosed with a mental health condition by a medical professional&quot;,&quot;If so, what condition(s)&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Have ever sought treatment for a mental health issue from a mental health professional&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;If you have a mental health issue, and feel that it interferes with your work when being treated effectively&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;If you have a mental health issue, feel that it interferes with your work when NOT being treated effectively&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Age&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;Gender&#39;</span><span class="p">,</span><span class="s1">&#39;Living Country&#39;</span><span class="p">,</span><span class="s1">&#39;US State/Territory living in&#39;</span><span class="p">,</span><span class="s1">&#39;Working Country&#39;</span><span class="p">,</span><span class="s1">&#39;US State working in&#39;</span><span class="p">,</span><span class="s1">&#39;Work position&#39;</span><span class="p">,</span><span class="s1">&#39;work remotely&#39;</span><span class="p">]</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">index</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">colus</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">item</span><span class="p">)</span>
+    <span class="n">index</span><span class="o">+=</span><span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 Self-employed
+2 Number of employees
+3 Tech Organization
+4 Tech Role
+5 Provided healthcare benefits
+6 Know healthcare benefits provided
+7 Has talked about mental health with employer
+8 Employer provides resources for mental health treatment
+9 Anonymity protected for treatment usage
+10 Will take a sick leave for mental health
+11 Discussing mental health disorders would have negative consequences
+12 Discussing physical health disorders would have negative consequences
+13 Would feel comfortable discussing mental health with coworker(s)
+14 Would feel comfortable discussing mental health with direct supervisor(s)
+15 Employer takes mental health as seriously as physical health
+16 Have heard negative consequences for employees open about mental health issues
+17 Have medical coverage for mental health issues
+18 Know resources for mental health treatment
+19 Will reveal mental health issues to clients or business contacts
+20 Revealing mental health issues to clients or business contacts will have negative impacts on career 
+21 Will reveal mental health issues to coworkers or employees
+22 Revealing mental health issues to clients or business contacts will have negative impacts on career 
+23 Productivity ever affected by mental health issue
+24 Percentage, if true
+25 Have previous employers
+26 Previous employers have provided mental health benefits
+27 Aware of mental health benefits provided by previous employers
+28 Discussing mental health issues with previous employers will have negative consequences
+29 Willing to share mental health issues with previous coworkers
+30 Willing to share mental health issues with previous direct supervisor(s)
+31 Previous employers took mental health as seriously as physical health
+32 Heard bad consequences for previous coworkers with mental health issues
+33 Willing to bring up a physical health issue with a potential employer
+34 Why or why not?
+35 Would bring up a mental health issue with a potential employer in an interview&#34;,&#34;Why or why not?
+36 Being identified as a person with a mental health issue would hurt your career
+37 Team members/co-workers would view you more negatively if they knew you suffered from a mental health issue
+38 Willingness to share with friends and family that you have a mental illness
+39 Have observed or experienced an unsupportive or badly handled response to a mental health issue in your current or previous workplace
+40 Have observations of how another individual who discussed a mental health disorder that made you less likely to reveal a mental health issue yourself in your current workplace
+41 Have a family history of mental illness?&#34;,&#34;Had a mental health disorder in the past?
+42 Currently have a mental health disorder
+43 If yes, what condition(s)
+44 If maybe, what condition(s)
+45 Have been diagnosed with a mental health condition by a medical professional&#34;,&#34;If so, what condition(s)
+46 Have ever sought treatment for a mental health issue from a mental health professional
+47 If you have a mental health issue, and feel that it interferes with your work when being treated effectively
+48 If you have a mental health issue, feel that it interferes with your work when NOT being treated effectively
+49 Age
+50 Gender
+51 Living Country
+52 US State/Territory living in
+53 Working Country
+54 US State working in
+55 Work position
+56 work remotely
 </pre>
 </div>
 </div>
